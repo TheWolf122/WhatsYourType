@@ -1,0 +1,119 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+}
+
+/* Gold */
+.rank1 {
+  background: #fffaeb;
+  border-color: #f0d060;
+}
+
+/* Silver */
+.rank2 {
+  background: #f7f7f7;
+  border-color: #c8c8d0;
+}
+
+/* Bronze */
+.rank3 {
+  background: #fff5f0;
+  border-color: #d4956a;
+}
+
+.rank {
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 28px;
+  flex-shrink: 0;
+  color: #999;
+}
+
+.rank1 .rank {
+  font-size: 1rem;
+  color: #b8860b;
+}
+
+.rank2 .rank {
+  font-size: 1rem;
+  color: #888;
+}
+
+.rank3 .rank {
+  font-size: 1rem;
+  color: #a0522d;
+}
+
+.sprite {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Slightly larger sprites for the podium spots */
+.rank1 .sprite,
+.rank2 .sprite,
+.rank3 .sprite {
+  width: 52px;
+  height: 52px;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rank1 .name,
+.rank2 .name,
+.rank3 .name {
+  font-size: 0.95rem;
+}
+
+.types {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+  flex-wrap: wrap;
+}
+
+.count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.rank1 .count,
+.rank2 .count,
+.rank3 .count {
+  font-size: 0.95rem;
+}
+
+.empty {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9rem;
+}

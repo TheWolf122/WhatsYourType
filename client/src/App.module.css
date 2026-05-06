@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  gap: 4px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.link {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+  transition: background 150ms, color 150ms;
+}
+
+.link:hover {
+  background: #f5f5f5;
+  color: #222;
+}
+
+.link.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbb;
+  border-top: 1px solid #eee;
+}

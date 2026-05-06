@@ -1,0 +1,30 @@
+:root {
+  --color-primary: #888;
+  --color-primary-light: #eeeeee;
+  --btn-radius: 8px;
+  --btn-font-weight: 400;
+  --card-radius: 12px;
+  --transition-speed: 150ms;
+}
+
+[data-theme="smash"] {
+  --color-primary: #cc2200;
+  --color-primary-light: #ffe5e0;
+  --btn-radius: 4px;
+  --btn-font-weight: 700;
+  --card-radius: 12px;
+}
+
+[data-theme="snuggle"] {
+  --color-primary: #e8619a;
+  --color-primary-light: #fde8f2;
+  --btn-radius: 20px;
+  --btn-font-weight: 400;
+  --card-radius: 12px;
+}
+
+body {
+  transition:
+    background-color var(--transition-speed),
+    border-radius var(--transition-speed);
+}
